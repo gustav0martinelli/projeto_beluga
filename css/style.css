@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*====================================================================*/
+
+/*REGRAS GLOBAIS*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+/*====================================================================*/
+
+/*VARIÁVEIS*/
+
+:root
+{
+    --corA: rgb(0, 0, 139);
+    --corB: rgb(0, 111, 139);
+    --corC: rgb(0, 139, 97);
+
+    --fonteA: 'DancingScript';
+}
+
+/*====================================================================*/
+
+/*HEADER E MENU*/
+
+header
+{
+    min-height: 150px;
+}
+
+.logo
+{
+    padding-left: 37px;
+}
+
+.logo a
+{
+    font-family: var(--fonteA);
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: 600;
+    color:white
+}
+
+.navbar
+{
+    background-color: var(--corA);
+    height: 80px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul 
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .item
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.navbar .item:hover
+{
+    background-color: var(--corB);
+    height: 60px;
+}
+
+/*====================================================================*/
+
+/*BODY*/
+
+body
+{
+    min-height: 100vh;
+    background: var(--corC);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main
+{
+    background-color: white;
+    margin-top: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*====================================================================*/
