@@ -28,6 +28,7 @@
     --corB: rgb(71, 210, 245);
     --corC: rgb(102, 187, 162);
     --corD: rgb(20, 20, 20);
+    --corE: rgb(161, 163, 143);
 
     --fonteA: 'DancingScript';
 }
@@ -38,7 +39,8 @@
 
 header
 {
-    min-height: 150px;
+    min-height: 80px;
+    margin-bottom: 0;
 }
 
 .logo
@@ -63,6 +65,7 @@ header
     padding-right: 15px;
     padding-left: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
 }
 
 .navdiv
@@ -70,6 +73,7 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .navbar ul 
@@ -89,7 +93,7 @@ header
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
-    border-radius: 180px;
+    border-radius: 1px;
     text-decoration: none;
     display: flex;
     font-size: 21px;
@@ -101,7 +105,6 @@ header
     background-color: var(--corB);
     color: var(--corA);
     transition: 0.1s ease-out;
-    transform:scale(1.02)
 }
 
 /*====================================================================*/
@@ -110,8 +113,7 @@ header
 
 body
 {
-    min-height: 100vh;
-    background: var(--corC);
+    background: var(--corE);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,11 +122,13 @@ body
 main
 {
     background-color: white;
-    margin-top: none;
-    margin-right: 25px;
-    margin-left: 25px;
-    padding: 10px;
-    border-radius: 5px;
+    min-width: 280px;
+    max-width: 1000px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
